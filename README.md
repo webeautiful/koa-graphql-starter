@@ -7,6 +7,7 @@ koa-graphql-starter
 ### Client
 > http://localhost:3000/graphiql
  
+### Query
 #### request
 ```
 query PostsForAuthor {
@@ -36,6 +37,28 @@ query PostsForAuthor {
           "votes": 1
         }
       ]
+    }
+  }
+}
+```
+
+### Mutation
+#### request
+```
+mutation updateVote {
+  upvotePost(postId: 1) {
+    id,
+    votes
+  }
+}
+```
+#### response
+```
+{
+  "data": {
+    "upvotePost": {
+      "id": 1,
+      "votes": 5
     }
   }
 }

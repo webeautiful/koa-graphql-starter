@@ -63,3 +63,24 @@ mutation updateVote {
   }
 }
 ```
+
+### create db
+```
+CREATE DATABASE test;
+
+CREATE TABLE `author` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `firstName` varchar(64) NOT NULL,
+  `lastName` varchar(64) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `post` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `authorId` int(11) NOT NULL COMMENT '作者id',
+  `title` varchar(64) NOT NULL,
+  `votes` bigint(20) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `authorId` (`authorId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```

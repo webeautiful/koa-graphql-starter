@@ -1,0 +1,21 @@
+{
+  "development": {
+    "database": "test",
+    "username": "common",
+    "password": "common",
+    "define": {
+      "timestamps": false
+    },
+    "migrationStorageTableName": "sequelize_meta",
+    "autoMigrateOldSchema": true
+  },
+  "production": {
+    "database": "xxx",
+    "username": "xxx",
+    "password": "xxx",
+    "define": {
+      "timestamps": false
+    },
+    "migrationStorageTableName": "sequelize_meta"
+  }
+}

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon src/index.js --exec babel-node",
-    "build": "babel src -d dist",
+    "build": "babel src -d dist; cp -R src/config dist",
     "serve": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,7 +23,8 @@
     "koa-bodyparser": "^4.2.0",
     "koa-router": "^7.3.0",
     "lodash": "^4.17.4",
-    "mysql2": "^1.5.1"
+    "mysql2": "^1.5.1",
+    "sequelize": "^4.28.6"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

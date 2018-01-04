@@ -4,7 +4,7 @@ koa-graphql-starter
 ### Start
 `yarn start`
 
-### Client
+Then, just point your browser at:
 > http://localhost:3000/graphiql
  
 ### Query

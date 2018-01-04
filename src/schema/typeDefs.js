@@ -3,7 +3,8 @@ const typeDefs = `
     id: Int!
     firstName: String
     lastName: String
-    posts: [Post] # the list of Posts by this author
+    # the list of Posts by this author
+    posts: [Post]
   }
 
   type Post {
